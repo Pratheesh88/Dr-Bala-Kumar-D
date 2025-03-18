@@ -4,7 +4,7 @@ To study and analyze Ideal Sampling (Impulse Sampling), where a continuous-time 
 ## TOOLS REQUIRED :
 Personal computer with installed with scilab.
 ## PROGRAM :
-clf; // Clear the current figure
+~~~clf; // Clear the current figure
 t = 0:0.001:1; // Time vector from 0 to 1 with a small step
 f = 5; // Frequency of the sine wave (5 Hz)
 x = sin(2 * %pi * f * t); // Continuous-time signal (sine wave)
@@ -52,6 +52,7 @@ title('Reconstructed Signals');
 xlabel('Time (s)');
 ylabel('Amplitude');
 legend('Continuous-time', 'Reconstructed from 20 Hz samples','Reconstructed from 10 Hz samples','Reconstructed from 6 Hz samples');
+~~~
 
 ## OUTPUT WAVEFORM :
 ![dc 1st exp](https://github.com/user-attachments/assets/d815252c-8ec5-41b5-a234-37b33e0fde01)
